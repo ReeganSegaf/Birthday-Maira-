@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Humaira!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading">
+        <h1>Kejutan Spesial Untukmu</h1>
+        <button id="startButton">Mulai</button>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="./musik/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button id="musicControl">🎵</button>
+
+    <div class="container" style="display: none;">
+        <h1 id="mainTitle" data-aos="fade-down" data-aos-duration="1000">Happy Birthday, Humaira!</h1>
+
+        <div id="countdown" data-aos="fade-up" data-aos-duration="1000"></div>
+
+        <div class="gallery" data-aos="fade-up" data-aos-duration="1000">
+            <a href="/api/placeholder/800/600" data-lightbox="memories" data-title="Kenangan 1">
+                <img src="./img/maira1.jpg" alt="Kenangan 1" data-aos="zoom-in" data-aos-delay="200">
+            </a>
+            <a href="/api/placeholder/800/600" data-lightbox="memories" data-title="Kenangan 2">
+                <img src="./img/maira2.jpg" alt="Kenangan 2" data-aos="zoom-in" data-aos-delay="400">
+            </a>
+            <a href="/api/placeholder/800/600" data-lightbox="memories" data-title="Kenangan 3">
+                <img src="./img/maira3.jpg" alt="Kenangan 3" data-aos="zoom-in" data-aos-delay="600">
+            </a>
+            <a href="/api/placeholder/800/600" data-lightbox="memories" data-title="Kenangan 4">
+                <img src="./img/maira1.jpg" alt="Kenangan 4" data-aos="zoom-in" data-aos-delay="800">
+            </a>
+        </div>
+
+        <h2 id="journeyTitle" data-aos="fade-up" data-aos-duration="1000">Perjalananku Mengenal Humaira</h2>
+
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Perkenalan Awal</h3>
+                    <p>Semua bermula ketika abang ipar memperkenalkan Humaira, meskipun saat itu aku belum melihat wajahmu. Namun, sejak awal aku merasakan sesuatu yang istimewa. Tidak ada keraguan dalam hatiku; hanya keinginan yang mendalam untuk mengenalmu lebih jauh.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Perasaan Tumbuh</h3>
+                    <p>Setiap momen sejak perkenalan itu terasa berharga. Perjalananku dimulai dengan rasa ingin tahu dan kebahagiaan yang tulus. Aku mulai menyadari betapa istimewa dirimu dalam hidupku.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Kebahagiaanku</h3>
+                    <p>Kini, setiap hari bersamamu adalah sebuah keajaiban yang aku syukuri. Setiap pengalaman dan momen yang aku lewati bersama humaira semakin menguatkan rasa cinta dan kebahagiaan dalam hidupku.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Hari spesialmu</h3>
+                    <p>Hari Ini adalah hari spesialmu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="message" data-aos="flip-up" data-aos-duration="1000">
+            <h2>Pesan Spesial Untukmu</h2>
+            <p>
+                Dear Humaira,<br><br>
+                Every moment with you is a treasure. On your special day, I want you to know how much you mean to me. Your smile lights up my world and your laughter is my favorite song. May this year bring you endless joy and countless blessings. Happy Birthday!<br><br>
+                With all my love,<br>
+                Aqil Segaf
+            </p>
+        </div>
+
+        <h2 id="videoTitle" data-aos="fade-up" data-aos-duration="1000">Video Kejutan Untukmu</h2>
+
+        <div class="video-container" data-aos="zoom-in" data-aos-duration="1000">
+            <iframe width="560" height="315" src="./video/2.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <div class="wish-container">
+            <h2>Buat Harapan</h2>
+            <textarea id="wishInput" placeholder="Tuliskan harapanmu di sini..."></textarea>
+            <button id="wishButton">Kirim Harapan</button>
+    </div>
+    <div id="fireworks">
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
